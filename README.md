@@ -78,3 +78,9 @@ vaultには「金庫」「秘密の場所」といった意味があり、ユー
 - タイトルや本文から適したタグを予測して付与する機能（on, off可能）
 - 特定のサイトから送信された記事は対応したフォルダに自動で保存されるように設定できる機能
 - ブックマーク管理のTipsを投稿できる機能
+
+<br/>
+
+## 画面遷移図
+
+[Figma](https://www.figma.com/file/zQDdfYZbcgx3isA0kBJ6dr/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?type=design&node-id=0-1&mode=design&t=Y44nKjjD6CHSxsFL-0)
