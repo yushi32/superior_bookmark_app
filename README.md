@@ -84,3 +84,6 @@ vaultには「金庫」「秘密の場所」といった意味があり、ユー
 ## 画面遷移図
 
 [Figma](https://www.figma.com/file/zQDdfYZbcgx3isA0kBJ6dr/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?type=design&node-id=0-1&mode=design&t=Y44nKjjD6CHSxsFL-0)
+
+## ER図
+[ER図](https://dbdiagram.io/d/Laterless%E4%BB%AE-ER%E5%9B%B3-6509653002bd1c4a5ed800e7)
