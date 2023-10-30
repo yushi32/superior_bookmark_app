@@ -1,0 +1,6 @@
+[submodule "app_back"]
+	path = app_back
+	url = https://github.com/yushi32/app_back
+[submodule "app_front"]
+	path = app_front
+	url = https://github.com/yushi32/app_front
