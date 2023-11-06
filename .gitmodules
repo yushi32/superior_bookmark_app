@@ -2,5 +2,5 @@
 	path = api
 	url = https://github.com/yushi32/app_back
 [submodule "app_front"]
-	path = front/app
+	path = front
 	url = https://github.com/yushi32/app_front
