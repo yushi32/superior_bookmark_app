@@ -29,6 +29,7 @@ services:
     command: 'yarn dev'
     ports:
       - '8000:3000'
+      - '8001:3001'
     volumes:
       - ./front:/usr/src/app
 volumes:
