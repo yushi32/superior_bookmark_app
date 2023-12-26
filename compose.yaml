@@ -20,8 +20,11 @@ services:
       - ./api:/app
     depends_on:
       - db
+      - redis
     tty: true
     stdin_open: true
+    environment:
+      REDIS_URL: "redis://redis:6379"
   front:
     build:
       context: ./front/
@@ -32,6 +35,28 @@ services:
       - '8001:3001'
     volumes:
       - ./front:/usr/src/app
+  redis:
+    image: redis:latest
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis-data:/data
+  sidekiq:
+    build:
+      # apiコンテナと同じコンテキストを使用する
+      context: ./api/
+      dockerfile: Dockerfile.local
+    command: bundle exec sidekiq
+    volumes:
+      - ./api:/app
+    depends_on:
+      - db
+      - redis
+    environment:
+      REDIS_URL: 'redis://redis:6379'
+  
 volumes:
   postgres-data:
+    driver: local
+  redis-data:
     driver: local
